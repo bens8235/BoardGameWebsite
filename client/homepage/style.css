@@ -172,3 +172,18 @@ footer {
   gap: 16px;
   width: 100%;
 }
+
+.carousel {
+  position: absolute;
+  top: 30%;
+  left: 23%;
+  visibility: hidden;
+}
+
+.carousel-visible {
+  visibility: visible;
+}
+
+.map-visible {
+  visibility: hidden;
+}

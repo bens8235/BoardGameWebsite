@@ -1,6 +1,9 @@
 const char = document.getElementById("char");
 const map = document.getElementById("map");
 const speech = document.getElementById("speech");
+const mapContainer = document.getElementById("map-container");
+const carousel = document.querySelector(".carousel");
+const toggle = document.getElementById("carousel-toggle");
 let readyToClick = false;
 
 let charBottom = 0;
@@ -108,21 +111,46 @@ map.addEventListener("click", function (event) {
   }
 });
 
-const interval2 = setInterval(function () {
-  counter += 1;
-  if (charBottom < 200) {
-    if (counter % 2 === 0) {
-      char.src = "./images/back2.png";
-      counter = 0;
+function firstRun() {
+  char.style.visibility = "visible";
+  const interval2 = setInterval(function () {
+    counter += 1;
+    if (charBottom < 200) {
+      if (counter % 2 === 0) {
+        char.src = "./images/back2.png";
+        counter = 0;
+      } else {
+        char.src = "./images/back1.png";
+      }
+      charBottom += 10;
+      char.style.bottom = `${charBottom}px`;
     } else {
-      char.src = "./images/back1.png";
+      char.src = "./images/front.png";
+      speech.style.visibility = "visible";
+      readyToClick = true;
+      clearInterval(interval2);
     }
-    charBottom += 10;
-    char.style.bottom = `${charBottom}px`;
-  } else {
-    char.src = "./images/front.png";
-    speech.style.visibility = "visible";
-    readyToClick = true;
-    clearInterval(interval2);
+  }, 100);
+}
+
+toggle.addEventListener("click", function () {
+  if (readyToClick === true) {
+    toggle.src = "./images/map.png";
+    mapContainer.classList.toggle("map-visible");
+    speech.style.visibility = "hidden";
+    char.style.visibility = "hidden";
+    carousel.classList.toggle("carousel-visible");
+    if (mapContainer.className !== "map-visible") {
+      toggle.src = "./images/caroussel.png";
+      char.style.bottom = 0;
+      readyToClick = false;
+      charBottom = 0;
+      charLeft = 455;
+      charTop = 200;
+      counter = 0;
+      firstRun();
+    }
   }
-}, 100);
+});
+
+firstRun();
