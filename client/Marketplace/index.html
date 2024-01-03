@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer type="module"></script>
+    <title>BG Marketplace</title>
+  </head>
+  <body>
+    <main>
+      <button id="createNewListingBtn">Create New Listing</button>
+
+      <div id="listingArea"></div>
+
+      <form id="newListingForm">
+        <input type="text" name="title" required placeholder="Game Title" />
+        <input type="number" name="price" required placeholder="Price (£)" />
+        <label for="condition">Condition</label>
+        <select name="condition" id="condition" required>
+          <option value="" disabled selected>Select one...</option>
+          <option value="New & sealed">New & Sealed</option>
+          <option value="New">New</option>
+          <option value="Good">Good</option>
+          <option value="Used">Used</option>
+          <option value="Poor">Poor</option>
+        </select>
+        <textarea
+          name="description"
+          cols="35"
+          rows="5"
+          placeholder="Description"
+          required></textarea>
+        <button id="createListingFormBtn">Create</button>
+      </form>
+    </main>
+  </body>
+</html>

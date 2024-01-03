@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.formContainer {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+#collectionForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  opacity: 0;
+}
+
+input,
+select,
+textarea {
+  height: 2.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #000000;
+}
+
+select {
+  padding: 0.5rem;
+}
+
+textarea {
+  height: 10rem;
+}
+
+.createBtn {
+  height: 3rem;
+  width: 10rem;
+  border-radius: 0.5rem;
+  border: 1px solid #000000;
+}
+
+.collectionContainer {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+#collectionCard {
+  width: 15rem;
+  background-color: #5772de;
+  border-radius: 0.5rem;
+  height: 10rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.addBtn {
+  width: 9.5rem;
+  height: 2rem;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 0.7rem;
+  border: 1px solid black;
+}

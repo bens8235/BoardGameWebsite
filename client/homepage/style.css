@@ -1,0 +1,174 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Sora, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+hero {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main_left {
+  justify-content: left;
+  z-index: 2;
+}
+
+.main_right {
+  cursor: pointer;
+  z-index: 1;
+}
+
+.main_middle div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_middle div img {
+  margin-left: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 72vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 0px;
+  background: linear-gradient(45deg, #363e55, #7984a2);
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 15px;
+  /* width: 6rem;
+  height: 1rem; */
+  margin: 0;
+  gap: 8px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.container img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+button:hover {
+  color: black;
+  background: white;
+  cursor: pointer;
+  transform: scale(1.1); /*Increase button size */
+}
+
+/* Will set each box size to it's set width and height */
+.box-sized {
+  box-sizing: border-box;
+}
+
+.box_header {
+  width: 680%;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e88f11;
+  border: 2px solid #333;
+  border-radius: 10px;
+  color: white;
+  font-size: 30px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+  border-radius: 10px;
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+}
+
+.box:hover {
+  color: white;
+  font-size: 35px;
+  cursor: crosshair;
+  transform: scale(1.1);
+}
+.box1 {
+  background-color: #dfd25d;
+}
+.box2 {
+  background-color: #80cbc4;
+}
+.box3 {
+  background-color: #ffcdd2;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  min-height: 100px;
+  margin-bottom: 20px;
+  font-family: Sora, sans-serif;
+}
+
+.jc-space-around {
+  justify-content: center;
+}
+
+/* button styles */
+button {
+  height: fit-content;
+  width: 64px;
+  padding: 4px;
+}
+
+button:hover {
+  color: black;
+  /*Color to black */
+  background: white;
+  /*Change background color */
+  cursor: pointer;
+  /*Change curser to pointer */
+  transform: scale(1.1);
+  /*Increase button size */
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  color: black;
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Norfolk Board Gamers</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bss.css" />
+    <link rel="stylesheet" href="char.css" />
+    <script src="./app.js" defer></script>
+    <!-- <script src="./carousel.js"></script> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="carousel.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <body>
+      <header>
+        <img
+          src="./images/logo.png"
+          width="160px"
+          alt="Norfolk Board Gamers Logo"
+        />
+
+        <div class="container">
+          <img
+            src="./images/title.png"
+            width="320px"
+            alt="Norfolk Board Gamers Webpage"
+          />
+        </div>
+
+        <nav>
+          <button class="btn signup">Sign Up</button>
+          <button class="btn signin">Sign In</button>
+          <!-- <a href="account.html"
+            ><img src="./images/account.jpg" alt="account logo" width="26"
+          /></a> -->
+        </nav>
+      </header>
+      <main>
+        <hero>
+          <div class="main_left">
+            <input type="checkbox" id="menu-toggle" />
+            <label id="trigger" for="menu-toggle"></label>
+            <label id="burger" for="menu-toggle"></label>
+            <ul id="menu">
+              <li><a href="#">Collection</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">1st Player Selector</a></li>
+            </ul>
+          </div>
+          <div class="main_middle">
+            <div>
+              <p>Meet, Play, Sell & Buy YOUR Board Games</p>
+              <img
+                src="./images/caroussel.png"
+                width="35px"
+                height="35px"
+                alt="Switch to carousel view"
+              />
+            </div>
+            <div id="map-container">
+              <img
+                id="map"
+                src="./images/townspace2.jpg"
+                alt="account logo"
+                width="782"
+                height="511"
+              />
+              <div>
+                <img id="speech" src="./images/speech.png" />
+                <img id="char" src="./images/back1.png" />
+              </div>
+            </div>
+          </div>
+          <div class="main_right"></div>
+        </hero>
+
+        <section>
+          <hr />
+          <h2>Partners</h2>
+          <div class="flex-container jc-space-around">
+            <div class="box box1">
+              <img src="./images/download.png" width="200px" />
+            </div>
+            <div class="box box2">
+              <img src="./images/zatu.jpg" width="200px" />
+            </div>
+            <div class="box box3">
+              <img src="./images/download (1).png" width="200px" />
+            </div>
+          </div>
+        </section>
+        <hr />
+
+        <div class="carousel">
+          <input type="radio" name="slider" id="item-1" checked />
+          <input type="radio" name="slider" id="item-2" />
+          <input type="radio" name="slider" id="item-3" />
+          <div class="cards">
+            <label class="card" for="item-1" id="image-1">
+              <img
+                src="./images/./find.png"
+                width="300p"
+                alt="Marketplace"
+                class="carousel-image"
+              />
+            </label>
+            <label class="card" for="item-2" id="image-2">
+              <img
+                src="./images/calendar2.png"
+                width="300p"
+                alt="Account"
+                class="carousel-image"
+              />
+            </label>
+            <label class="card" for="item-3" id="image-3">
+              <img
+                src="./images/marketplace.png"
+                width="300p"
+                alt="Events"
+                class="carousel-image"
+              />
+            </label>
+          </div>
+        </div>
+
+        <hr />
+      </main>
+
+      <footer>
+        <div class="fotter-left">Links</div>
+        <div class="fotter-middle">&copy; The Fantastic Four</div>
+        <div class="fotter-right">Impressum</div>
+      </footer>
+    </body>
+  </body>
+</html>
