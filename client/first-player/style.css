@@ -1,6 +1,8 @@
 body,
 html {
-  background-color: black;
+  background-image: url(forest.jpg);
+  background-size: cover;
+  background-position: center center;
   color: white;
   font-size: 30px;
   position: relative;

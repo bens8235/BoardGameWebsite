@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  background-image: url("background_account.jpg");
+}
+
 .formContainer {
   width: 50%;
   margin: 0 auto;
@@ -65,4 +80,14 @@ textarea {
   cursor: pointer;
   border-radius: 0.7rem;
   border: 1px solid black;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  z-index: 1;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
