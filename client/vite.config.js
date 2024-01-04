@@ -7,10 +7,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve('index.html'),
-        calendar: resolve(__calendar, 'calendar/index.html'),
-        collection: resolve(__collection, 'collection/index.html'),
-        Marketplace: resolve(__Marketplace, 'Marketplace/index.html'),
-        firstplayer: resolve(__firstplayer, 'firstplayer/index.html'),
+        calendar: resolve('calendar/index.html'),
+        collection: resolve('collection/index.html'),
+        Marketplace: resolve('Marketplace/index.html'),
+        firstplayer: resolve('firstplayer/index.html'),
       },
     },
   },
