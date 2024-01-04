@@ -32,8 +32,7 @@ async function getListings() {
     buyGameBtn.addEventListener("click", function () {
       deleteListing(listing.id);
     });
-  });
-}
+  };
 
 getListings();
 
