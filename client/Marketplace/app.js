@@ -7,7 +7,7 @@ const listingCard = document.getElementById("listingCard");
 
 // The below function gets all of the database entries (game listings) and displays them on the page when it is loaded.
 async function getListings() {
-    const response = await fetch("https://norfolk-board-gamers-client.onrender.com/marketplacelistings");
+    const response = await fetch("https://norfolk-board-gamers-server.onrender.com/marketplacelistings");
     const listings = await response.json();
     listings.forEach(function(listing) {
         const {title, price, condition} = listing;
@@ -46,7 +46,7 @@ createNewListingBtn.addEventListener("click", function() {
 async function createNewListing() {
     const formData = new FormData(newListingForm);
     const formValues = Object.fromEntries(formData);
-    const response = await fetch("https://norfolk-board-gamers-client.onrender.com/marketplacelistings", {
+    const response = await fetch("https://norfolk-board-gamers-server.onrender.com/marketplacelistings", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -89,7 +89,7 @@ newListingForm.addEventListener("submit", function(event) {
 
 // Function to delete a listing
 function deleteListing(id) {
-    fetch(`https://norfolk-board-gamers-client.onrender.com/marketplacelistings/${id}`, {
+    fetch(`https://norfolk-board-gamers-server.onrender.com/marketplacelistings/${id}`, {
         method: 'DELETE'
     })
     document.getElementById(`listingCard-${id}`).remove();
