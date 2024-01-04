@@ -12,6 +12,8 @@
     <title>Collection Form</title>
   </head>
   <body>
+    <img class="img" src="../calendar/scrollDown.png" />
+    <div id="close" class="close"></div>
     <div id="collection" class="collection">
       <button id="createNewCollectionBtn" class="addBtn">
         Create New Collection
@@ -27,7 +29,7 @@
             required
           />
           <input type="date" id="boughtDate" name="bought_date" />
-          <label for="condition">Condition</label>
+          <label for="condition">Condition:</label>
           <select name="condition" id="condition" required>
             <option value="" disabled selected>Select one...</option>
             <option value="new">New</option>
@@ -51,6 +53,5 @@
         </form>
       </div>
     </div>
-    <img class="img" src="../calendar/scrollDown.png" />
   </body>
 </html>

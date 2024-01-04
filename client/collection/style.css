@@ -93,6 +93,15 @@ textarea {
   z-index: -1;
 }
 
+.close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15.5%;
+  left: 73.5%;
+  cursor: pointer;
+}
+
 button {
   height: fit-content;
   width: 64px;

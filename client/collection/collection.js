@@ -4,6 +4,7 @@ const collectionContainer = document.getElementById("collectionContainer");
 const createNewCollectionBtn = document.getElementById(
   "createNewCollectionBtn"
 );
+const close = document.getElementById("close");
 
 async function getCollection() {
   const response = await fetch("http://localhost:8080/collection");
@@ -81,3 +82,7 @@ newCollectionForm.addEventListener("submit", (e) => {
 });
 
 getCollection();
+
+close.addEventListener("click", () => {
+  window.location.href = "/";
+});

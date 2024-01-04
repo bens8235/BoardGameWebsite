@@ -2,6 +2,7 @@ const newListingForm = document.getElementById("newListingForm");
 const createNewListingBtn = document.getElementById("createNewListingBtn");
 const listingArea = document.getElementById("listingArea");
 const listingCard = document.getElementById("listingCard");
+const close = document.getElementById("close");
 // const {title, price, condition} = listing;
 
 // The below function gets all of the database entries (game listings) and displays them on the page when it is loaded.
@@ -101,3 +102,7 @@ function deleteListing(id) {
   );
   document.getElementById(`listingCard-${id}`).remove();
 }
+
+close.addEventListener("click", () => {
+  window.location.href = "/";
+});
