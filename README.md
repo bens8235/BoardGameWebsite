@@ -23,3 +23,7 @@ git checkout branchName
 ## Contrbution
 
 For major changes, please open an issue first to discuss what would like to change
+
+## Contrubutor
+
+Dan, Ed, Ben, Thanthan
