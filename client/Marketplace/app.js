@@ -91,7 +91,7 @@ newListingForm.addEventListener("submit", function (event) {
 
 // Event listener / function for buy now button to remove the listing from the marketplace & remove it from the database. //
 
-// Function to delete a listing.
+// Function to delete a listing
 function deleteListing(id) {
   fetch(
     `https://norfolk-board-gamers-server.onrender.com/marketplacelistings/${id}`,
