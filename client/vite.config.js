@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__root, 'index.html'),
+        main: resolve('index.html'),
         calendar: resolve(__calendar, 'calendar/index.html'),
         collection: resolve(__collection, 'collection/index.html'),
         Marketplace: resolve(__Marketplace, 'Marketplace/index.html'),
