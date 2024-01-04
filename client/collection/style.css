@@ -108,3 +108,12 @@ button:hover {
   transform: scale(1.1);
   opacity: 1;
 }
+
+.close {
+  position: absolute;
+  top: 15%;
+  left: 73.5%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}

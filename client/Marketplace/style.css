@@ -114,3 +114,11 @@ button:hover {
   width: 5.5rem;
   margin-top: 5px;
 }
+.close {
+  position: absolute;
+  top: 15%;
+  left: 73.5%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}

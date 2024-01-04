@@ -33,7 +33,7 @@ body {
 .wrapper header {
   display: flex;
   align-items: center;
-  padding: 25px 30px 10px;
+  padding: 128px 30px 10px;
   justify-content: space-between;
 }
 
@@ -139,4 +139,13 @@ header .icons span:last-child {
 
 .special {
   color: white;
+}
+
+.close {
+  position: absolute;
+  top: 15%;
+  left: 73.5%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }

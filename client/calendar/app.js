@@ -8,6 +8,8 @@ const wed = document.querySelectorAll(".wed");
 const thu = document.querySelectorAll(".thu");
 const days = document.querySelectorAll(".days li");
 const img = document.querySelector(".img");
+const close = document.getElementById("close");
+
 let counter = 0;
 
 function displayEvent(eventInfo, eventInfo2, events) {
@@ -102,4 +104,8 @@ img.addEventListener("mouseover", function () {
       counter = 0;
     }
   }
+});
+
+close.addEventListener("click", () => {
+  window.location.href = "/";
 });

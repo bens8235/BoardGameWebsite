@@ -4,9 +4,12 @@ const collectionContainer = document.getElementById("collectionContainer");
 const createNewCollectionBtn = document.getElementById(
   "createNewCollectionBtn"
 );
+const close = document.getElementById("close");
 
 async function getCollection() {
-  const response = await fetch("https://norfolk-board-gamers-server.onrender.com/collection");
+  const response = await fetch(
+    "https://norfolk-board-gamers-server.onrender.com/collection"
+  );
   const collections = response.json();
 
   Object.keys(collections).forEach(function (collection) {
@@ -34,13 +37,16 @@ async function createNewCollection() {
   const formData = new FormData(newCollectionForm);
   const formValues = Object.fromEntries(formData);
 
-  const response = await fetch("https://norfolk-board-gamers-server.onrender.com/collection", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(formValues),
-  });
+  const response = await fetch(
+    "https://norfolk-board-gamers-server.onrender.com/collection",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formValues),
+    }
+  );
   const json = await response.json();
   console.log(json, "json");
   newCollectionForm.reset();
@@ -81,3 +87,7 @@ newCollectionForm.addEventListener("submit", (e) => {
 });
 
 getCollection();
+
+close.addEventListener("click", () => {
+  window.location.href = "/";
+});
