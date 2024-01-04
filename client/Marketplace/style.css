@@ -16,24 +16,45 @@ body {
   background-size: cover;
   background-position: center center;
   position: relative;
+  font-family: Sora, sans-serif;
   background-image: url("background_marketplace.jpg");
+  background-repeat: no-repeat;
+}
+
+input,
+select,
+textarea {
+  width: 20rem;
+  height: 2rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 3px;
+  border: none;
+}
+
+textarea {
+  height: 5rem;
+}
+
+label {
+  align-self: flex-start;
+  margin-left: 4.9rem;
 }
 
 #createNewListingBtn {
   position: absolute;
-  top: 20%;
-  left: 25%;
+  top: 4.3rem;
+  left: 45%;
   width: 150px;
   height: 35px;
   margin: 15px;
-  cursor: pointer;
 }
 
 #newListingForm {
   opacity: 0;
-  background-color: lightgreen;
-  width: 350px;
-  height: 350px;
+  background-color: #996648;
+  width: 30rem;
+  height: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,30 +62,51 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  margin: auto;
   transform: translate(-50%, -50%);
   gap: 10px;
   border-radius: 15px;
 }
 
 #createListingFormBtn {
-  margin-top: 50px;
-  width: 75px;
+  margin-top: 2.5rem;
+  width: 5rem;
   height: 35px;
-  cursor: pointer;
 }
 
 #listingArea {
   display: flex;
   flex-wrap: wrap;
+  position: absolute;
+  top: 25%;
   gap: 2px;
 }
 
-#listingCard {
-  background-color: lightskyblue;
-  width: 150px;
-  height: 100px;
+.listingCard {
+  background-color: #996648;
+  width: 10rem;
+  height: 7rem;
   margin: 5px;
   cursor: pointer;
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
+}
+
+button {
+  height: fit-content;
+  width: 64px;
+  padding: 4px;
+  opacity: 0.6;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: black;
+  background: white;
+  transform: scale(1.1);
+  opacity: 1;
+}
+#buyGameBtn {
+  width: 4rem;
 }
