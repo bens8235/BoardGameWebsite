@@ -4,20 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amita&family=Architects+Daughter&family=Caveat&family=Libre+Baskerville&family=Sora:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <script src="./app.js" defer type="module"></script>
     <title>BG Marketplace</title>
   </head>
   <body>
-    <img class="img" src="scrollDown.png" />
+    <img class="img" src="../calendar/scrollDown.png" />
     <main>
       <button id="createNewListingBtn">Create New Listing</button>
-
       <div id="listingArea"></div>
-
       <form id="newListingForm">
         <input type="text" name="title" required placeholder="Game Title" />
         <input type="number" name="price" required placeholder="Price (£)" />
-        <label for="condition">Condition</label>
+        <label for="condition">Condition: </label>
         <select name="condition" id="condition" required>
           <option value="" disabled selected>Select one...</option>
           <option value="New & sealed">New & Sealed</option>
