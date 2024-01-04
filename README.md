@@ -24,6 +24,6 @@ git checkout branchName
 
 For major changes, please open an issue first to discuss what would like to change
 
-## Contrubutor
+## Contrubutors
 
 Dan, Ed, Ben, Thanthan
