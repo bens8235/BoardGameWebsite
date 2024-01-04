@@ -86,14 +86,11 @@ function move(
       } else {
         char.style.visibility = "hidden";
         if (house === 1) {
-          window.location.href =
-            "http://127.0.0.1:3000/client/calendar/index.html";
+          window.location.href = "./calendar/index.html";
         } else if (house === 2) {
-          window.location.href =
-            "http://127.0.0.1:3000/client/collection/index.html";
+          window.location.href = "./collection/index.html";
         } else {
-          window.location.href =
-            "http://127.0.0.1:3000/client/Marketplace/index.html";
+          window.location.href = "./Marketplace/index.html";
         }
         counter = 0;
         clearInterval(interval);
