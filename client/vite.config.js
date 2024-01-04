@@ -10,7 +10,7 @@ export default defineConfig({
         calendar: resolve('calendar/index.html'),
         collection: resolve('collection/index.html'),
         Marketplace: resolve('Marketplace/index.html'),
-        firstplayer: resolve('firstplayer/index.html'),
+        firstplayer: resolve('first-player/index.html'),
       },
     },
   },
