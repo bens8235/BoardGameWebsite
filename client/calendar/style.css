@@ -19,6 +19,7 @@ body {
   background-size: cover;
   background-position: center center;
   position: relative;
+  font-family: Sora, sans-serif;
   background-image: url("background.jpg");
 }
 

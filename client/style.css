@@ -145,22 +145,20 @@ button:hover {
   justify-content: center;
 }
 
-/* button styles */
 button {
   height: fit-content;
   width: 64px;
   padding: 4px;
+  opacity: 0.6;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 button:hover {
   color: black;
-  /*Color to black */
   background: white;
-  /*Change background color */
-  cursor: pointer;
-  /*Change curser to pointer */
   transform: scale(1.1);
-  /*Increase button size */
+  opacity: 0.8;
 }
 
 footer {
