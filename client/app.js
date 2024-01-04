@@ -11,6 +11,24 @@ let charLeft = 455;
 let charTop = 200;
 let counter = 0;
 
+function hover(event, yLower, yUpper, xLower, xUpper, house) {
+  let houseNumber = house;
+  if (
+    event.offsetY >= yLower &&
+    event.offsetY <= yUpper &&
+    event.offsetX >= xLower &&
+    event.offsetX <= xUpper
+  ) {
+    if (houseNumber === 1) {
+      speech.src = "./images/pixel-speech-bubble2.png";
+    } else if (houseNumber === 2) {
+      speech.src = "./images/pixel-speech-bubble3.png";
+    } else {
+      speech.src = "./images/pixel-speech-bubble4.png";
+    }
+  }
+}
+
 function move(
   event,
   yLower,
@@ -100,12 +118,23 @@ function move(
 }
 
 map.addEventListener("click", function (event) {
-  console.log(event);
   if (readyToClick === true) {
     move(event, 154, 224, 616, 712, 645, 280, 1);
     move(event, 53, 129, 535, 627, 565, 380, 2);
     move(event, 153, 227, 295, 387, 460, 280, 3);
   }
+});
+
+map.addEventListener("mousemove", function () {
+  if (readyToClick === true) {
+    speech.src = "./images/pixel-speech-bubble.png";
+  }
+});
+
+map.addEventListener("mousemove", function (event) {
+  hover(event, 154, 224, 616, 712, 1);
+  hover(event, 53, 129, 535, 627, 2);
+  hover(event, 153, 227, 295, 387, 3);
 });
 
 function firstRun() {
