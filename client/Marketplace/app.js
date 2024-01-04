@@ -77,8 +77,7 @@ async function createNewListing() {
     buyGameBtn.addEventListener("click", function () {
       deleteListing(listing.id);
     });
-  });
-}
+  };
 
 getListings();
 
