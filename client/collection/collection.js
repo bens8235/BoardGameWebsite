@@ -6,7 +6,7 @@ const createNewCollectionBtn = document.getElementById(
 );
 
 async function getCollection() {
-  const response = await fetch("http://localhost:8080/collection");
+  const response = await fetch("https://norfolk-board-gamers-server.onrender.com/collection");
   const collections = response.json();
 
   Object.keys(collections).forEach(function (collection) {
@@ -34,7 +34,7 @@ async function createNewCollection() {
   const formData = new FormData(newCollectionForm);
   const formValues = Object.fromEntries(formData);
 
-  const response = await fetch("http://localhost:8080/collection", {
+  const response = await fetch("https://norfolk-board-gamers-server.onrender.com/collection", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
