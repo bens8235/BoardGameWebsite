@@ -1,4 +1,6 @@
 const circles = document.querySelectorAll(".circle");
+const inst = document.getElementById("instructions");
+const instText = document.querySelector(".inst");
 const circlesArr = Array.from(circles);
 let circlesArrSlice = [];
 const winner = document.getElementById("winner");
@@ -81,6 +83,7 @@ click.addEventListener("click", function () {
 
 for (let i = 0; i < players.length; i++) {
   players[i].addEventListener("click", function () {
+    instText.style.display = "none";
     for (let i = 0; i < players.length; i++) {
       players[i].classList.remove("btnselect");
     }
@@ -98,3 +101,7 @@ for (let i = 0; i < players.length; i++) {
     numberOfPlayers();
   });
 }
+
+inst.addEventListener("click", function () {
+  instText.style.display = "block";
+});
