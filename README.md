@@ -1,6 +1,10 @@
 ## Cloning project:
 
-Git clone https://github.com/K0rmir/boardgameproject
+Git clone https://github.com/bens8235/BoardGameWebsite
+
+## Render
+
+https://norfolk-board-gamers-client.onrender.com/
 
 ## Installation
 
