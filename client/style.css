@@ -65,6 +65,10 @@ nav {
   gap: 8px;
 }
 
+.partnerSection {
+  margin-top: 60px;
+}
+
 .container {
   width: 100%;
   height: 100%;
@@ -182,4 +186,16 @@ footer {
 
 .map-visible {
   visibility: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+  .carousel {
+    visibility: visible;
+  }
+
+  #map,
+  #speech,
+  #char {
+    opacity: 0;
+  }
 }
